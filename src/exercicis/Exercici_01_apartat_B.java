@@ -28,9 +28,22 @@ public class Exercici_01_apartat_B {
           	Després calculeu l'edat mitjana dels nens i l'edat mitjana de les
           	nenes, iterant sobre les llistes emplenades en el pas anterior. 
           	Per tal d'iterar sobre les llistes, utilitzeu els seus mètodes get */
-
-        double sumaEdatNens = 0; // per calcular la mitjana d'edat dels nens
+         double sumaEdatNens = 0; // per calcular la mitjana d'edat dels nens
         double sumaEdatNenes = 0; // per calcular la mitjana d'edat de les nenes
+    
+        for (Criatura criatura : poblacio){
+            if (criatura.getSexe()== Criatura.NEN)
+                elsNens.add(criatura);
+            sumaEdatNens += criatura.getEdad();
+            else{
+                lesNenes.add(criatura);
+                sumaEdatNenes+=criatura.getEdad();
+            }
+        }
+
+        double mitjana = sumaEdatNens + sumEdatNenes / poblacio.length;
+
+       
 
         /* ... poseu la vostra solució a partir d'aquí */
         for (int i = 0; i < poblacio.length; i++) {
