@@ -26,20 +26,36 @@ public class Exercici_00 {
         // els elements de les posicions parelles de la taula unsElements.
         /* COMPLETE */
 
+        LinkedList llista = new LinkedList ();
+        for (int i =0; i<unsElements.length; i++){
+           if (i%2 ==0 ){ llista.add(unsElements[i])}
+        }
+
         // Crear una segona col·lecció que contingui tots els elements
         // de la taula unsElements que s'anomenen "Alpha" o "Omega"
         /* COMPLETE */
+        LinkedList llista2 = new LinkedList();
+        for (int i=0; i<unsElements.length; i++){
+            if (unsElements[i].getName().equals("Alpha") || unsElements.getName().equals("Omega")){
+                llista2.add(unsElements[i]);
+            }
+        }
 
         // A la segona col·lecció afegir-hi l'element de
         // la posició (índex) 3 de la taula
         /* COMPLETE */
+        llista2.add(unsElements[3]);
 
         // De la primera col·lecció eliminar els elements que són com els de la segona
         /* COMPLETE */
+        llista.removeAll(llista2);
 
         // Obtenir una taula amb tots els elements de la primera col·lecció.
         //  Mostrar-ne el contingut.
         /* COMPLETE */
+        for (int i =0, i<llista.length, i++){
+            System.out.println(llista[i].toString)
+        }
     }
 }
 
