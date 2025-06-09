@@ -30,6 +30,13 @@ public class Exercici_01_apartat_A {
           	a la taula població. Després "dir" quantes nenes hi ha.
           */
 
+        for (Criatura criatura : poblacio){
+            if (criatura.getSexe()==Criatura.NENA){
+                lesNenes.add(criatura);
+                quantesNenes++;
+            }
+        }
+
         /* ... posseu la vostra solució a partir d'aquí */
 
         // mostrar el resultat
