@@ -30,6 +30,15 @@ public static void main (String [] args) {
         for (int i=0; i<poblacio.length; i++) {
             llarInfants.add(poblacio[i]);
         }
+
+        Iterator it = llarInfants.Interator();
+
+        while (it.hasNext)
+                criaturActual = it.next();
+                if (criaturActual.getSexe()==Criatura.NEN){
+                        it.remove();
+                        
+                }
         
         /* APARTAT C: eliminar tots els nens -les nenes no- de la 
            Col·lecció llarInfants. Feu-ho obtenint l'iterador
